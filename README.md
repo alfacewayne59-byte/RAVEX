@@ -1,35 +1,30 @@
 # RAVEX
-
 **Create. Play. Explore.**
 
-RAVEX is an original browser-first 3D gaming and creator-platform foundation. It takes inspiration from user-generated game platforms while using its own identity, interface, world systems, and economy. It is not a copy of Roblox and does not use Roblox assets or branding.
+RAVEX is an original browser-first 3D world-building platform foundation. This release upgrades the starter into a playable 3D exploration experience.
 
-## Current foundation
-- Responsive RAVEX discovery dashboard
-- Three.js 3D world preview with a third-person-style avatar and interactive camera
-- Original RAVEX visual identity
-- Ravex (RVX) wallet concept with clearly labeled demo balance
-- Game cards, creator studio entry points, avatar and marketplace navigation
-- Mobile-friendly controls and layout
+## Playable in this release
+- Third-person 3D island world rendered with Three.js.
+- Keyboard movement (WASD / arrow keys) and jump (Space).
+- Explore the Frontier plaza and collect floating crystals.
+- Crystal collection awards 25 demo RVX and saves the demo balance in local browser storage.
+- Build mode: select **Build World**, then tap/click the ground to place blocks.
+- Responsive dashboard with Play, Discover, Build, Marketplace, Community and Achievements sections.
+- Mobile-friendly layout and touch-ready interface shell.
 
 ## Run locally
-
 ```bash
 npm install
 npm run dev
 ```
+Open the Vite URL in a modern browser. Production build: `npm run build`.
 
-## Important status
-This repository is an early frontend prototype, not a complete live platform. Accounts, persistent cloud saves, real multiplayer, moderation, creator payouts, and a secure production currency ledger still need backend services. The displayed RVX balance is demo-only and has no cash value. Do not treat it as real money.
+## Current limitations — clearly stated
+This is a playable single-player foundation, not yet a full Roblox-scale service. Online multiplayer, real user accounts, cloud saves, creator publishing, moderation, chat, marketplace checkout, anti-cheat and a secure server-side RVX ledger are not implemented. Secondary navigation areas are clearly marked as being prepared. RVX is a local demo counter only, has no cash value, and cannot be bought, sold or withdrawn.
 
-## Planned architecture
-- Frontend: React, Vite, Three.js
-- Backend: authenticated API, PostgreSQL, object storage
-- Multiplayer: authoritative realtime room service
-- Creator content: validated scene format, asset pipeline, publishing and moderation
-- Economy: server-authoritative Ravex ledger, audit trail, anti-fraud controls
-
-## Brand
-- Product: RAVEX
-- Currency: Ravex (RVX)
-- Tagline: Create. Play. Explore.
+## Roadmap
+1. Backend identity, profiles and cloud saves.
+2. Authoritative multiplayer servers and safe real-time sessions.
+3. Creator world editor, asset pipeline and publishing review.
+4. Moderation, reporting, parental safety and anti-abuse systems.
+5. Secure, auditable in-game economy and marketplace policies.
